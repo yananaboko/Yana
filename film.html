@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмография The Beatles</title>
+    <style>
+        body {
+            background-color: #F5FFFA; /* Мягкий светлый фон */
+            color: #333; /* Темный цвет текста */
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333; /* Темный фон для заголовка */
+            color: #fff; /* Белый текст */
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            color: #f1c40f; /* Яркий желтый цвет */
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #2c3e50; /* Темно-синий цвет */
+            font-size: 2em;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+        }
+        th {
+            background-color: #f1c40f; /* Желтый фон для заголовков */
+            color: #fff;
+        }
+        td {
+            background-color: #fff;
+        }
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        a:hover {
+            color: #f1c40f;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+        hr {
+            width: 50%;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+
+        /* Стиль для меню */
+        .menu {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Активная страница */
+        .menu a.active {
+            font-weight: bold;
+            color: #f1c40f; /* Жёлтый цвет для активной страницы */
+        }
+
+        /* Жирное выделение для "Заказать альбом" */
+        .menu a.shop {
+            font-weight: bold;
+            color: #f1c40f; /* Жёлтый цвет для активной страницы */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Меню -->
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="info.html">Общая информация</a>
+        <a href="history.html">История</a>
+        <a href="discography.html">Дискография</a>
+        <a href="film.html"class="shop">Фильмография</a> <!-- выделено жирным -->
+        <a href="links.html">Источники</a>
+        <a href="shop.html" >Заказать Альбом</a> 
+        <a href="contacts.html">Контакты</a>
+    </div>
+
+    <header>
+        <h1>Фильмография The Beatles</h1>
+    </header>
+
+    <table>
+        <tr>
+            <th>Год</th>
+            <th>Русское название</th>
+            <th>Оригинальное название</th>
+            <th>Афиша</th>
+            <th>Примечание</th>
+        </tr>
+        <tr>
+            <td>1964</td>
+            <td>Вечер трудного дня</td>
+            <td>A Hard Day's Night</td>
+            <td><img src="hard.jpg" width="150" alt="A Hard Day's Night"></td>
+            <td>Х/Ф</td>
+        </tr>
+        <tr>
+            <td>1965</td>
+            <td>На помощь!</td>
+            <td>Help!</td>
+            <td><img src="help.jpg" width="150" alt="Help!"></td>
+            <td>Х/Ф</td>
+        </tr>
+        <tr>
+            <td>1967</td>
+            <td>Волшебное таинственное путешествие</td><td>Magical Mystery Tour</td>
+            <td><img src="magic.jpg" width="150" alt="Magical Mystery Tour"></td>
+            <td>Х/Ф</td>
+        </tr>
+        <tr>
+            <td>1968</td>
+            <td>Желтая подводная лодка</td>
+            <td>Yellow Submarine</td>
+            <td><img src="lodka.jpg" width="150" alt="Yellow Submarine"></td>
+            <td>М/Ф</td>
+        </tr>
+        <tr>
+            <td>1970</td>
+            <td>Пусть будет так</td>
+            <td>Let It Be</td>
+            <td><img src="be.jpg" width="150" alt="Let It Be"></td>
+            <td>Д/Ф</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

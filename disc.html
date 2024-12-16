@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Beatles</title>
+  <style>
+    body {
+      background-color: #F5FFFA;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Стили для меню */
+    .menu {
+      text-align: center;
+      padding: 20px;
+      background-color: #2F4F4F;
+      color: white;
+      position: relative;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Жирное выделение текущей страницы */
+    .active {
+      font-weight: bold;
+    }
+
+    /* Стили для бургера */
+    .menu-burger {
+      display: none;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .menu-burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+
+    /* Скрытые ссылки */
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Мобильные стили */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2F4F4F;
+        text-align: center;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .menu-burger {
+        display: block;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+    }
+
+    /* Стиль для дисков */
+    .album-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .album-list li {
+      margin: 5px 0;
+    }
+
+    .album-year {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .album-download a {
+      text-decoration: none;
+      color: #2F4F4F;
+      font-size: 16px;
+    }
+
+    .album-download a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // Функция для переключения меню
+    function toggleMenu() {
+      var menu = document.querySelector('.nav-links');
+      menu.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Меню бургер -->
+  <div class="menu-burger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Меню -->
+  <div class="menu">
+    <ul class="nav-links">
+      <li><a href="Index.html">Главная</a></li>
+      <li><a href="info.html">Общая информация</a></li>
+      <li><a href="history.html">История</a></li>
+      <li><a href="diskography.html" class="active">Дискография</a></li>
+      <li><a href="film.html">Фильмография</a></li>
+      <li><a href="links.html">Источники</a></li>
+      <li><a href="Shop.html">Заказать Альбом</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </div>
+
+  <!-- Контент -->
+  <h1 align="center"><em>Дискография</em></h1>
+  <img align="right" src="one.jpg" width="20%">
+  <p class="album-year">1963</p>
+  <ul class="album-list">
+    <li>Please Please Me</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170901/The_Beatles_-_Please_Please_Me_47950234.mp3" download>Скачать</a></div>
+    <li>With The Beatles</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20201015/The_Beatles_-_With_The_Beatles_1963_Full_Album_71264540.mp3" download>Скачать</a></div>
+  </ul>
+
+  <img align="right" src="two.jpg" width="20%">
+  <p class="album-year">1964</p>
+  <ul class="album-list">
+    <li>A Hard Day's Night</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170901/The_Beatles_-_A_Hard_Days_Night_47950247.mp3" download>Скачать</a></div>
+    <li>Beatles for Sale</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20190331/The_Beatles_1964_-_Beatles_For_Sale_Full_Album_63188973.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p class="album-year">1965</p>
+  <ul class="album-list">
+    <li>Help!</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170901/The_Beatles_-_Help_47950256.mp3" download>Скачать</a></div>
+    <li>Rubber Soul</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20190424/The_Beatles_-_Michelle_1966_-_Rubber_Soul_63720578.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p class="album-year">1966</p>
+  <ul class="album-list">
+    <li>Revolver</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20190427/The_Beatles_-_07_She_Said_She_Said_Revolver_63787179.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p class="album-year">1967</p>
+  <ul class="album-list">
+    <li>Sgt. Pepper's Lonely Hearts Club Band</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170903/The_Beatles_-_Sgt_Peppers_Lonely_Hearts_Club_Band_48031094.mp3" download>Скачать</a></div>
+    <li>Magical Mystery Tour</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170902/The_Beatles_-_Magical_Mystery_Tour_48011017.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p class="album-year">1968</p>
+  <ul class="album-list">
+    <li>The Beatles (The White Album)</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20190901/The_Beatles_-_07_While_My_Guitar_Gently_Weeps_The_Beatles_-_White_Album_66376600.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p class="album-year">1969</p>
+  <ul class="album-list">
+    <li>Yellow Submarine</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170901/The_Beatles_-_Yellow_Submarine_47950273.mp3" download>Скачать</a></div>
+    <li>Abbey Road</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20190410/The_Beatles_-_Abbey_Road_Medley_63420497.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p class="album-year">1970</p>
+  <ul class="album-list">
+    <li>Let It Be</li>
+    <div class="album-download"><a href="https://rus.hitmotop.com/get/music/20170902/The_Beatles_-_Let_It_Be_47963684.mp3" download>Скачать</a></div>
+  </ul>
+
+  <p><a href="#top">Вернуться к началу</a></p>
+
+</body>
+</html>
